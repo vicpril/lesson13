@@ -3,15 +3,23 @@ var $name = 'Виктор', $age = 26;
 var result;
 document.write('Меня зовут ' + $name + '. Мне ' + $age + ' лет');
 
-result = delete($name);
-document.write("<br>del $name: "+result);
-result = delete($name);
-document.write("<br>del $age: "+result);
+$name = undefined;
+$age = undefined;
+
+//result = delete($name);
+//document.write("<br>del $name: "+result);
+//result = delete($name);
+//document.write("<br>del $age: "+result);
 
 if (typeof $name != 'undefined'){
     document.write("<br>$name существует");
 } else {
     document.write("<br>$name НЕ существует");
+}
+if (typeof $age != 'undefined'){
+    document.write("<br>$age существует");
+} else {
+    document.write("<br>$age НЕ существует");
 }
 
 //конец Задания 1
